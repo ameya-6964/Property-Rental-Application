@@ -1,9 +1,26 @@
-import React from 'react'
+import "@/assets/styles/globals.css";
 
-const MainLayout = () => {
+export const metadata = {
+  title: "PropertyPulse | Find Perfect Rental Appartment",
+  description: "Find Your Dream Rental Property",
+  keywords: "rentals,apartments,properties",
+  icons: {
+    icon: [
+      {
+        url: "/logo.jpg",
+      },
+    ],
+  },
+};
+
+const MainLayout = ({ children }) => {
   return (
-    <div>MainLayout</div>
-  )
-}
+    <html lang="en">
+      <body>
+        <div>{children}</div>
+      </body>
+    </html>
+  );
+};
 
-export default MainLayout
+export default MainLayout;
